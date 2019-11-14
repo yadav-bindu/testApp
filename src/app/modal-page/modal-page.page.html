@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+    <ion-buttons slot="end">
+        <button ion-button (click)="myDismiss()">
+            <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-list-header>
+          <ion-label>Year based models</ion-label>
+        </ion-list-header>
+        <ion-list>
+          <ion-item *ngFor="let x of detailsList.anos">
+            <ion-label>{{x.nome}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-list-header>
+          <ion-label>Model</ion-label>
+        </ion-list-header>
+        <ion-list>
+          <ion-item *ngFor="let x of detailsList.modelos">
+            <ion-label>{{x.nome}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

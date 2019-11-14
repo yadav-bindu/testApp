@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Motors</ion-title>
+    <ion-buttons slot="end">
+        <button ion-button (click)="backButton()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let x of motosList">
+    <ion-label>{{x.nome}}</ion-label>
+    <ion-label><p>Code : {{x.codigo}}</p></ion-label>
+    <ion-button (click)="getDetailsView(x.codigo,title)">Show details</ion-button>
+  </ion-item>
+</ion-list>
+</ion-content>

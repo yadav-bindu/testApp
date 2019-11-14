@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Vehicles app
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    This application shows average vehicle prices in the domestic market, serving only as a parameter for negotiations
+    or valuations. Actual prices vary depending on region, conservation, color, accessories or any other factor that may
+    influence the supply and demand conditions for a specific vehicle.
+    ======
+    Also, please note that, all the API calls are used from https://deividfortuna.github.io/fipe/
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="cars" (click)="goToCars()">
+        <ion-icon name="logo-model-s"></ion-icon>
+        <ion-label>Cars</ion-label>
+        <!-- <ion-badge>6</ion-badge> -->
+      </ion-tab-button>
+  
+      <ion-tab-button tab="motos" (click)="goToMotos()">
+        <ion-icon name="move"></ion-icon>
+        <ion-label>Motors</ion-label>
+        <!-- <ion-badge>6</ion-badge> -->
+      </ion-tab-button>
+  
+      <ion-tab-button tab="caminhoms" (click)="goToCaminhom()">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Caminhom</ion-label>
+        <!-- <ion-badge>6</ion-badge> -->
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
